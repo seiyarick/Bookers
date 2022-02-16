@@ -66,6 +66,11 @@ form {
 .actions {
   margin-bottom: 10px;
 }
+
+.notice {
+  color:green;
+}
+
 /*tbody {*/
 /*  display: table-row-group;*/
 /*  vertical-align: middle;*/

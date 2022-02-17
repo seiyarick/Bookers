@@ -44,7 +44,8 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    book = Book.find(params[:id])#ルーティング→コントローラ→ビュー
+    book = Book.find(params[:id])
+    flash[:delete] = 'Book was successfully destroyed.'#ルーティング→コントローラ→ビュー
     book.destroy
     redirect_to books_path#移動先のルーティングPrefixを参照。urlも
   end

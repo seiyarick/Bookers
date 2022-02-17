@@ -1,3 +1,5 @@
+<form>
+  <h1>Editing Book</h1>
 <% if @book.errors.any? %>
   <%= @book.errors.count %> errors prohibited this book from being saved:
   <ul>
@@ -7,8 +9,6 @@
 <% end %>
 
 <%= form_with model: @book do |f| %>
-<form>
-  <h1>Editing Book</h1>
 
     <div class = "filed">
       <label for="book_title">Title</label>

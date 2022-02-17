@@ -11,7 +11,7 @@ class BooksController < ApplicationController
 
     if @book.save
       flash[:notice] = 'Book was successfully updated.'
-      redirect_to book_path(book.id)#フラッシュメッセージ
+      redirect_to book_path(@book.id)#フラッシュメッセージ
     else
       render :index
     end
